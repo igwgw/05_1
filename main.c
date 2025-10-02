@@ -14,9 +14,7 @@ int main(int argc, char *argv[])
         printf("음수입니다. \n");
     else 
         printf("0입니다.\n");
-          
-        
-         
+             
   
   system("PAUSE");	
   return 0;
