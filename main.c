@@ -3,16 +3,39 @@
 
 int main(int argc, char *argv[])
 {
-    int x;
+    int a,b;
+    char op;
+    int result;
     
-    printf("Input an integer :");
-    scanf("%d", &x);
+    printf("enter the calculation: ");
+    scanf("%i %c %i",&a,&op,&b);
     
-    if (x >0)
-       printf("absoulte is %i.\n",x);
-    else 
-       printf("absolute is %i.\n"-x);
-             
+    switch(op)
+    {
+    case '+':
+         result=a+b;
+         break;
+    case '-': 
+          result=a-b;
+          break;
+    case '*':
+         result=a*b;
+         break;
+    case '/':
+         result=a/b;
+         break;
+    default:
+            printf("Invalid operator\n");
+    }
+         
+    printf("=%i", result);
+    
+         
+         
+    
+
+    
+    
   
   system("PAUSE");	
   return 0;
